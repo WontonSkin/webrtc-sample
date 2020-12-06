@@ -1,0 +1,27 @@
+/*
+*  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+*
+*  Use of this source code is governed by a BSD-style license
+*  that can be found in the LICENSE file in the root of the source
+*  tree.
+*/
+
+/* margin属性，设置video元素的四个边距，上边距0px，右边距10px，下边距0px，左边距0px */
+/* width属性，值%表示基于父元素宽度的百分比宽度； */
+
+video {
+  margin: 0 10px 0 0;
+  width: calc(50% - 7px);
+}
+
+/* :last-of-type选择器，匹配最后一个元素 */
+video:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 400px) {
+  video {
+    margin: 0 5px 20px 0;
+    width: calc(50% - 5px);
+  }
+}
